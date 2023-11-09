@@ -89,13 +89,7 @@ const Chat = () => {
     }
     
     const getUserInfoList = async () => {
-        const userInfoList = await getUserInfo();
-        if (userInfoList.length === 0 && window.location.hostname !== "127.0.0.1") {
-            setShowAuthMessage(false);
-        }
-        else {
-            setShowAuthMessage(false);
-        }
+        setShowAuthMessage(false);
     }
 
     let assistantMessage = {} as ChatMessage
